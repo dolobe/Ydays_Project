@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* skyblue */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* white */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333; /* dark grey */
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555; /* medium grey */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc; /* light grey */
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50; /* green */
+            color: #ffffff; /* white */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* darker green */
+        }
+
+        .prediction {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #4caf50; /* green */
+        }
+    </style>    
+
+</head>
+<body>
+    <div class="container"> 
+        <h1>Prediction Form</h1>
+        <form action="/predict" method="post">
+            <label for="danceability">Danceability</label>
+            <input type="text" id="danceability" name="danceability_%"><br>
+
+            <label for="valence">Valence</label>
+            <input type="text" id="valence" name="valence_%"><br>
+
+            <label for="energy">Energy</label>
+            <input type="text" id="energy" name="energy_%"><br>
+
+            <label for="acousticness">Acousticness</label>
+            <input type="text" id="acousticness" name="acousticness_%"><br>
+
+            <label for="instrumentalness">Instrumentalness</label>
+            <input type="text" id="instrumentalness" name="instrumentalness_%"><br>
+
+            <label for="liveness">Liveness</label>
+            <input type="text" id="liveness" name="liveness_%"><br>
+
+            <label for="speechiness">Speechiness</label>
+            <input type="text" id="speechiness" name="speechiness_%"><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div> 
+</body>
+</html>
+
+
