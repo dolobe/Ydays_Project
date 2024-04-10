@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; 
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333; 
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+            color: #4caf50; 
+        }
+    </style>
 </head>
 <body>
-    <h1>Prediction Result</h1>
-    <p>The predicted value is: {{ prediction }}</p>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>The predicted value is: {{ prediction }}</p>
+    </div>
 </body>
 </html>
+
