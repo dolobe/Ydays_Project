@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-model = joblib.load('modele_lineaire.pkl')
+model = joblib.load('modele_adaboost.pkl')
 
 df = pd.read_csv('../spotify.csv', encoding='latin1')
 
